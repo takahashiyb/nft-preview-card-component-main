@@ -1,0 +1,59 @@
+:root {
+  --spacing-0: 0rem;
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+}
+
+.card {
+  display: grid;
+  row-gap: var(--spacing-300);
+}
+
+.container-card-text {
+  display: grid;
+  row-gap: var(--spacing-300);
+}
+
+.container-art-text {
+  display: grid;
+  row-gap: var(--spacing-300);
+}
+
+.container-art-details {
+  display: grid;
+  row-gap: var(--spacing-200);
+}
+
+.container-art-status {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.price {
+  display: grid;
+  grid-template-columns: min-content auto;
+  justify-content: start;
+  align-items: center;
+}
+
+.duration {
+  display: grid;
+  grid-template-columns: min-content auto;
+  justify-content: end;
+  align-items: center;
+}
+
+.container-artist-text {
+  display: grid;
+  grid-template-columns: min-content auto;
+  justify-content: start;
+  align-items: center;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  border: none;
+  background-color: slategray;
+}
