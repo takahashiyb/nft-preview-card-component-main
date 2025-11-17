@@ -44,27 +44,19 @@ body {
   box-shadow: 0px 0px 40px -20px var(--black);
 }
 
-.container-card-image:hover {
-  .overlay-card-image {
-    opacity: 0.5;
-  }
-  .overlay-icon {
-    opacity: 1;
-  }
-}
-
 .container-card-image {
   border-radius: 8px;
+  outline: none;
 }
 
 .overlay-card-image {
   background-color: var(--cyan-400);
-  opacity: 0;
+  opacity: 0.5;
 }
 
 .overlay-icon {
   height: 44px;
-  opacity: 0;
+  opacity: 1;
 }
 
 .art-name {
@@ -72,8 +64,10 @@ body {
   font: var(--font-1);
 }
 
-.art-name:hover {
+.art-name:hover,
+.art-name:focus {
   color: var(--cyan-400);
+  outline: none;
 }
 
 .art-description {
@@ -101,8 +95,10 @@ body {
   font: var(--font-4);
 }
 
-.artist-name:hover {
+.artist-name:hover,
+.artist-name:focus {
   color: var(--cyan-400);
+  outline: none;
 }
 
 hr {
@@ -114,9 +110,17 @@ hr {
 
 /* Footer */
 
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  translate: -50%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--white);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

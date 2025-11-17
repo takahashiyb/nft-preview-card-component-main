@@ -19,15 +19,21 @@
   <body>
     <main>
       <div class="card">
-        <div class="container-card-image">
+        <div class="container-card-image" tabindex="0">
           <img class="card-image" src="./images/image-equilibrium.jpg" alt="" />
-          <div class="overlay-card-image"></div>
-          <img class="overlay-icon" src="./images/icon-view.svg" alt="" />
+          <div class="overlay-card-image" inert hidden></div>
+          <img
+            class="overlay-icon"
+            src="./images/icon-view.svg"
+            alt=""
+            inert
+            hidden
+          />
         </div>
         <div class="container-card-text">
           <div class="container-art-text">
             <div class="container-art-details">
-              <h1 class="art-name">Equilibrium #3429</h1>
+              <h1 class="art-name" tabindex="0">Equilibrium #3429</h1>
               <p class="art-description">
                 Our Equilibrium collection promotes balance and calm.
               </p>
@@ -48,13 +54,13 @@
             <img src="./images/image-avatar.png" alt="artist avatar" />
             <p>
               <span class="label">Creation of</span>
-              <span class="artist-name">Jules Wyvern</span>
+              <span class="artist-name" tabindex="0">Jules Wyvern</span>
             </p>
           </div>
         </div>
       </div>
     </main>
-    <!-- <footer>
+    <footer>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -64,6 +70,7 @@
           >takahashiyb</a
         >.
       </div>
-    </footer> -->
+    </footer>
+    <script src="./javascript/index.js"></script>
   </body>
 </html>
