@@ -1,3 +1,117 @@
+/* reset */
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* font import */
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../font/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+/* variables */
+
+:root {
+  /* colors */
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --blue-950: rgb(13, 25, 44);
+  --blue-900: rgb(21, 38, 63);
+  --blue-800: rgb(46, 64, 90);
+  --blue-500: rgb(139, 172, 217);
+  --cyan-400: rgb(0, 255, 248);
+
+  /* font */
+  --font-1: 600 1.375rem/1.25 "Outfit";
+  --font-2: 300 1.125rem/1.45 "Outfit";
+  --font-3: 600 1rem/1.25 "Outfit";
+  --font-4: 400 1rem/1.25 "Outfit";
+}
+
+body {
+  background-color: var(--blue-950);
+}
+
+/* Main */
+
+.card {
+  background-color: var(--blue-900);
+  border-radius: 15px;
+  box-shadow: 0px 0px 40px -20px var(--black);
+}
+
+.container-card-image:hover {
+  .overlay-card-image {
+    opacity: 0.5;
+  }
+  .overlay-icon {
+    opacity: 1;
+  }
+}
+
+.container-card-image {
+  border-radius: 8px;
+}
+
+.overlay-card-image {
+  background-color: var(--cyan-400);
+  opacity: 0;
+}
+
+.overlay-icon {
+  height: 44px;
+  opacity: 0;
+}
+
+.art-name {
+  color: var(--white);
+  font: var(--font-1);
+}
+
+.art-name:hover {
+  color: var(--cyan-400);
+}
+
+.art-description {
+  color: var(--blue-500);
+  font: var(--font-2);
+}
+
+.price {
+  color: var(--cyan-400);
+  font: var(--font-3);
+}
+
+.duration {
+  color: var(--blue-500);
+  font: var(--font-4);
+}
+
+.container-artist-text .label {
+  color: var(--blue-500);
+  font: var(--font-4);
+}
+
+.artist-name {
+  color: var(--white);
+  font: var(--font-4);
+}
+
+.artist-name:hover {
+  color: var(--cyan-400);
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  border: none;
+  background-color: var(--blue-800);
+}
+
 /* Footer */
 
 .attribution {
