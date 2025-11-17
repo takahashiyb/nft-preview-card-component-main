@@ -85,9 +85,16 @@ body {
   font: var(--font-4);
 }
 
-.container-artist-text .label {
-  color: var(--blue-500);
-  font: var(--font-4);
+.container-artist-text {
+  img {
+    border: solid 1px var(--white);
+    border-radius: 50%;
+  }
+
+  .label {
+    color: var(--blue-500);
+    font: var(--font-4);
+  }
 }
 
 .artist-name {
