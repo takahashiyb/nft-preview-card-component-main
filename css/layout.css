@@ -5,9 +5,25 @@
   --spacing-300: 1.5rem;
 }
 
+body {
+  width: 95dvw;
+}
+
 .card {
   display: grid;
   row-gap: var(--spacing-300);
+  padding: var(--spacing-300);
+}
+
+.container-card-image {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
 }
 
 .container-card-text {
@@ -30,25 +46,19 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.price {
+.marked-text {
   display: grid;
   grid-template-columns: min-content auto;
-  justify-content: start;
   align-items: center;
+  column-gap: var(--spacing-100);
+}
+
+.price {
+  justify-content: start;
 }
 
 .duration {
-  display: grid;
-  grid-template-columns: min-content auto;
   justify-content: end;
-  align-items: center;
-}
-
-.container-artist-text {
-  display: grid;
-  grid-template-columns: min-content auto;
-  justify-content: start;
-  align-items: center;
 }
 
 hr {
@@ -56,4 +66,17 @@ hr {
   width: 100%;
   border: none;
   background-color: slategray;
+}
+
+.container-artist-text {
+  justify-content: start;
+
+  img {
+    height: 33px;
+  }
+
+  p {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
 }
